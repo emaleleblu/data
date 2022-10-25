@@ -279,3 +279,5 @@ ERROR:terminado.websocket:not able to serialize: expected string or bytes-like o
 [W 10:22:10.743 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/12a76777-d2d7-43c3-bd22-6f0ecd9a0199 (82.84.247.253): Kernel deleted before session
 [W 10:22:10.743 NotebookApp] Kernel deleted before session
 [W 10:22:10.743 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/12a76777-d2d7-43c3-bd22-6f0ecd9a0199 (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[I 10:30:47.735 NotebookApp] 302 GET /user/ipython-ipython-in-depth-rb87ga46/lab/?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 1.070000ms
+[W 10:30:47.905 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/lab?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 3.490000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/terminals/2
