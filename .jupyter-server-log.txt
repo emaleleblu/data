@@ -1,0 +1,266 @@
+[I 09:02:04.251 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 09:02:04.575 NotebookApp] Loading IPython parallel extension
+[W 09:02:04.653 NotebookApp] Error loading server extension jupyter_resource_usage
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/notebookapp.py", line 2033, in init_server_extensions
+        mod = importlib.import_module(modulename)
+      File "/srv/conda/envs/notebook/lib/python3.6/importlib/__init__.py", line 126, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+      File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+      File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+      File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_resource_usage/__init__.py", line 5, in <module>
+        from .server_extension import load_jupyter_server_extension
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_resource_usage/server_extension.py", line 6, in <module>
+        from jupyter_resource_usage.metrics import PSUtilMetricsLoader
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_resource_usage/metrics.py", line 6, in <module>
+        from jupyter_server.serverapp import ServerApp
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_server/serverapp.py", line 83, in <module>
+        from jupyter_server.services.sessions.sessionmanager import SessionManager
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_server/services/sessions/sessionmanager.py", line 22, in <module>
+        from jupyter_server.traittypes import InstanceFromClasses
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_server/traittypes.py", line 7, in <module>
+        from traitlets.utils.descriptions import describe
+    ModuleNotFoundError: No module named 'traitlets.utils.descriptions'
+[W 09:02:04.659 NotebookApp] Error loading server extension jupyterlab
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/notebookapp.py", line 2036, in init_server_extensions
+        func(self)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyterlab/serverextension.py", line 6, in load_jupyter_server_extension
+        from .labapp import LabApp
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyterlab/labapp.py", line 15, in <module>
+        from jupyter_server.serverapp import flags
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_server/serverapp.py", line 83, in <module>
+        from jupyter_server.services.sessions.sessionmanager import SessionManager
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_server/services/sessions/sessionmanager.py", line 22, in <module>
+        from jupyter_server.traittypes import InstanceFromClasses
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_server/traittypes.py", line 7, in <module>
+        from traitlets.utils.descriptions import describe
+    ModuleNotFoundError: No module named 'traitlets.utils.descriptions'
+[I 09:02:04.661 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.6/site-packages/nteract_on_jupyter
+[I 09:02:04.663 NotebookApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 09:02:04.664 NotebookApp] Serving notebooks from local directory: /home/jovyan
+[I 09:02:04.664 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 09:02:04.664 NotebookApp] http://jupyter-ipython-2dipython-2din-2ddepth-2drb87ga46:8888/user/ipython-ipython-in-depth-rb87ga46/?token=...
+[I 09:02:04.664 NotebookApp]  or http://127.0.0.1:8888/user/ipython-ipython-in-depth-rb87ga46/?token=...
+[I 09:02:04.664 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 09:02:04.669 NotebookApp] No web browser found: could not locate runnable browser.
+[I 09:02:04.670 NotebookApp] 302 GET /user/ipython-ipython-in-depth-rb87ga46/ (10.0.5.47) 0.580000ms
+[I 09:02:05.238 NotebookApp] 302 GET /user/ipython-ipython-in-depth-rb87ga46/tree/binder/Index.ipynb?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 1.770000ms
+[I 09:02:09.824 NotebookApp] Writing notebook-signing key to /home/jovyan/.local/share/jupyter/notebook_secret
+[W 09:02:09.825 NotebookApp] Notebook binder/Index.ipynb is not trusted
+/srv/conda/envs/notebook/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 09:02:10.190 NotebookApp] Kernel started: 95a4f1d8-3c0e-42ae-ac1d-586805a14c86, name: python3
+[I 09:02:10.190 NotebookApp] Culling kernels with idle durations > 600 seconds at 60 second intervals ...
+[I 09:02:10.190 NotebookApp] Culling kernels even with connected clients
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7f131f6075c0>()
+handle: <Handle <TaskStepMethWrapper object at 0x7f131f6075c0>()>
+Traceback (most recent call last):
+  File "/srv/conda/envs/notebook/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[W 09:02:47.013 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 9.480000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[W 09:02:47.094 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 1.880000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[W 09:02:52.115 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.690000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+/srv/conda/envs/notebook/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 09:02:53.927 NotebookApp] Using existing profile dir: '/home/jovyan/.ipython/profile_default'
+[W 09:03:19.144 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.730000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[I 09:03:24.798 NotebookApp] New terminal with automatic name: 1
+ERROR:terminado.websocket:not able to serialize: expected string or bytes-like object
+[I 09:03:29.501 NotebookApp] 302 GET /user/ipython-ipython-in-depth-rb87ga46/ (10.0.5.47) 0.650000ms
+[W 09:03:41.578 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.530000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[W 09:03:42.532 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.170000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[I 09:04:10.328 NotebookApp] Saving file at /binder/Index.ipynb
+[W 09:04:26.788 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.020000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[W 09:06:19.910 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.190000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/binder/Index.ipynb
+[I 09:06:23.607 NotebookApp] Starting buffering for 95a4f1d8-3c0e-42ae-ac1d-586805a14c86:1befc95476d34a02a86c0373c175c626
+[W 09:13:10.192 NotebookApp] Culling 'idle' kernel 'python3' (95a4f1d8-3c0e-42ae-ac1d-586805a14c86) with 0 connections due to 649 seconds of inactivity.
+[I 09:13:10.193 NotebookApp] Kernel shutdown: 95a4f1d8-3c0e-42ae-ac1d-586805a14c86
+[I 09:32:57.239 NotebookApp] 302 GET /user/ipython-ipython-in-depth-rb87ga46/lab/?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 0.680000ms
+[W 09:32:57.400 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/lab?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 3.620000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/terminals/1
+[I 09:32:59.677 NotebookApp] 302 GET /user/ipython-ipython-in-depth-rb87ga46/lab/?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 0.700000ms
+[W 09:32:59.845 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/lab?token=-fUtcNRaSmO_mYkEtUFbqA (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/lab
+[W 09:33:07.450 NotebookApp] Notebook Index.ipynb is not trusted
+[W 09:33:07.870 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.970000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[I 09:33:07.876 NotebookApp] Kernel started: 136742c6-7b3b-4cf5-ac22-4d8d2edb4e40, name: python3
+[W 09:33:12.877 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.160000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:33:17.888 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.130000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[I 09:33:19.011 NotebookApp] Using existing profile dir: '/home/jovyan/.ipython/profile_default'
+[I 09:35:08.041 NotebookApp] Saving file at /Index.ipynb
+[W 09:35:20.622 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.480000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:24.614 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.730000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:36.971 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:39.639 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.030000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:44.643 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:49.654 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.310000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:54.661 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.500000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:35:59.675 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.160000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:36:05.026 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.110000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:36:09.682 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.150000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:36:14.684 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 1.970000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:40:45.730 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.220000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:40:46.774 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.130000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:40:51.781 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.180000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:40:56.793 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.650000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:41:01.799 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.130000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:41:06.812 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[I 09:41:08.080 NotebookApp] Copying Index.ipynb to 
+[W 09:41:09.968 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.990000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[I 09:41:09.978 NotebookApp] Kernel started: 46dd5e8e-6eea-439c-b7cf-44ef8506d733, name: python3
+[W 09:41:14.978 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.620000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:41:19.985 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.170000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:41:24.986 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.050000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:41:29.992 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.210000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:41:35.000 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.150000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:41:42.634 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.140000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:42:00.640 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.820000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:05.469 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:10.475 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.280000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:15.494 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.170000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:20.507 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.820000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:25.508 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.720000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:30.520 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 3.160000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:42:37.797 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.090000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:42:42.053 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.800000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[I 09:42:44.537 NotebookApp] Using existing profile dir: '/home/jovyan/.ipython/profile_default'
+[I 09:42:49.898 NotebookApp] New terminal with automatic name: 2
+ERROR:terminado.websocket:not able to serialize: expected string or bytes-like object
+[W 09:43:10.192 NotebookApp] Culling 'idle' kernel 'python3' (136742c6-7b3b-4cf5-ac22-4d8d2edb4e40) with 1 connections due to 601 seconds of inactivity.
+[I 09:43:10.193 NotebookApp] Kernel shutdown: 136742c6-7b3b-4cf5-ac22-4d8d2edb4e40
+[I 09:43:10.387 NotebookApp] Starting buffering for 136742c6-7b3b-4cf5-ac22-4d8d2edb4e40:36aaa35ac92b49138e5469c77c523cbd
+[I 09:43:10.407 NotebookApp] Kernel shutdown: 136742c6-7b3b-4cf5-ac22-4d8d2edb4e40
+[E 09:43:10.407 NotebookApp] Uncaught exception DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/29623101-8a03-49b0-bdac-4cecf41799d0 (82.84.247.253)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ipython-ipython-in-depth-rb87ga46/api/sessions/29623101-8a03-49b0-bdac-4cecf41799d0', version='HTTP/1.1', remote_ip='82.84.247.253')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/gen.py", line 769, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/services/sessions/handlers.py", line 157, in delete
+        yield maybe_future(sm.delete_session(session_id))
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/gen.py", line 762, in run
+        value = future.result()
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/gen.py", line 775, in run
+        yielded = self.gen.send(value)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/services/sessions/sessionmanager.py", line 284, in delete_session
+        yield maybe_future(self.kernel_manager.shutdown_kernel(session['kernel']['id']))
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 304, in shutdown_kernel
+        self.pinned_superclass.shutdown_kernel(self, kernel_id, now=now, restart=restart)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_client/utils.py", line 26, in wrapped
+        raise e
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_client/utils.py", line 23, in wrapped
+        return loop.run_until_complete(future)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/nest_asyncio.py", line 81, in run_until_complete
+        return f.result()
+      File "/srv/conda/envs/notebook/lib/python3.6/asyncio/tasks.py", line 180, in _step
+        result = coro.send(None)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_client/multikernelmanager.py", line 274, in _async_shutdown_kernel
+        if km.ready.exception():
+    asyncio.base_futures.InvalidStateError: Exception is not set.
+[W 09:43:10.418 NotebookApp] Unhandled error
+[E 09:43:10.419 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1666690379|30:username-hub-gke2-mybinder-org|44:YzI0NjFkYzRjNjc3NDQzNzhjYTJkY2EzMjdiOTQyMWI=|2d1f81388a2b1dba6cb9294a43de07fe76415abd92f89a2ba5a44655af3b7631\"; _xsrf=2|2082f1dc|41a950e824818d7af12ccfb7cbf9ef13|1666688525",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|2082f1dc|41a950e824818d7af12ccfb7cbf9ef13|1666688525",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "User-Agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0",
+      "X-Scheme": "https",
+      "X-Forwarded-Scheme": "https",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-For": "82.84.247.253,::ffff:10.0.4.121",
+      "X-Real-Ip": "82.84.247.253",
+      "X-Request-Id": "7d24a0c8de1a0ba6f353e032a3a30fcb",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 09:43:10.419 NotebookApp] 500 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/29623101-8a03-49b0-bdac-4cecf41799d0 (82.84.247.253) 13.950000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:45:14.641 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.410000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:45:17.525 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/29623101-8a03-49b0-bdac-4cecf41799d0 (82.84.247.253): Kernel deleted before session
+[W 09:45:17.525 NotebookApp] Kernel deleted before session
+[W 09:45:17.526 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/29623101-8a03-49b0-bdac-4cecf41799d0 (82.84.247.253) 2.000000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[I 09:45:17.717 NotebookApp] Kernel started: 947a086c-a422-4210-acb0-c1d750728373, name: python3
+[W 09:45:19.140 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.730000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 09:45:57.120 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.090000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:45:57.821 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.170000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:45:59.189 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.060000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:46:00.035 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 1.990000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:52:10.192 NotebookApp] Culling 'idle' kernel 'python3' (46dd5e8e-6eea-439c-b7cf-44ef8506d733) with 1 connections due to 659 seconds of inactivity.
+[I 09:52:10.193 NotebookApp] Kernel shutdown: 46dd5e8e-6eea-439c-b7cf-44ef8506d733
+[I 09:52:10.381 NotebookApp] Starting buffering for 46dd5e8e-6eea-439c-b7cf-44ef8506d733:a7d50ab1b15048fa8d22d206f5eb172d
+[W 09:52:10.756 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/e3575037-0a77-48d1-85e5-f2620c3bbe67 (82.84.247.253): Kernel deleted before session
+[W 09:52:10.757 NotebookApp] Kernel deleted before session
+[W 09:52:10.758 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/e3575037-0a77-48d1-85e5-f2620c3bbe67 (82.84.247.253) 3.520000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 09:56:10.192 NotebookApp] Culling 'idle' kernel 'python3' (947a086c-a422-4210-acb0-c1d750728373) with 1 connections due to 651 seconds of inactivity.
+[I 09:56:10.193 NotebookApp] Kernel shutdown: 947a086c-a422-4210-acb0-c1d750728373
+[I 09:56:10.390 NotebookApp] Starting buffering for 947a086c-a422-4210-acb0-c1d750728373:36aaa35ac92b49138e5469c77c523cbd
+[I 09:56:10.402 NotebookApp] Kernel shutdown: 947a086c-a422-4210-acb0-c1d750728373
+[E 09:56:10.403 NotebookApp] Uncaught exception DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/d18eac19-f1a1-45a6-b114-43db8fc8087e (82.84.247.253)
+    HTTPServerRequest(protocol='https', host='hub.gke2.mybinder.org', method='DELETE', uri='/user/ipython-ipython-in-depth-rb87ga46/api/sessions/d18eac19-f1a1-45a6-b114-43db8fc8087e', version='HTTP/1.1', remote_ip='82.84.247.253')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/gen.py", line 769, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/services/sessions/handlers.py", line 157, in delete
+        yield maybe_future(sm.delete_session(session_id))
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/gen.py", line 762, in run
+        value = future.result()
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/tornado/gen.py", line 775, in run
+        yielded = self.gen.send(value)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/services/sessions/sessionmanager.py", line 284, in delete_session
+        yield maybe_future(self.kernel_manager.shutdown_kernel(session['kernel']['id']))
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 304, in shutdown_kernel
+        self.pinned_superclass.shutdown_kernel(self, kernel_id, now=now, restart=restart)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_client/utils.py", line 26, in wrapped
+        raise e
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_client/utils.py", line 23, in wrapped
+        return loop.run_until_complete(future)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/nest_asyncio.py", line 81, in run_until_complete
+        return f.result()
+      File "/srv/conda/envs/notebook/lib/python3.6/asyncio/tasks.py", line 180, in _step
+        result = coro.send(None)
+      File "/srv/conda/envs/notebook/lib/python3.6/site-packages/jupyter_client/multikernelmanager.py", line 274, in _async_shutdown_kernel
+        if km.ready.exception():
+    asyncio.base_futures.InvalidStateError: Exception is not set.
+[W 09:56:10.405 NotebookApp] Unhandled error
+[E 09:56:10.406 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-gke2-mybinder-org=\"2|1:0|10:1666690379|30:username-hub-gke2-mybinder-org|44:YzI0NjFkYzRjNjc3NDQzNzhjYTJkY2EzMjdiOTQyMWI=|2d1f81388a2b1dba6cb9294a43de07fe76415abd92f89a2ba5a44655af3b7631\"; _xsrf=2|2082f1dc|41a950e824818d7af12ccfb7cbf9ef13|1666688525",
+      "Sec-Fetch-Site": "same-origin",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Dest": "empty",
+      "Referer": "https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb",
+      "Origin": "https://hub.gke2.mybinder.org",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|2082f1dc|41a950e824818d7af12ccfb7cbf9ef13|1666688525",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "User-Agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0",
+      "X-Scheme": "https",
+      "X-Forwarded-Scheme": "https",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub.gke2.mybinder.org",
+      "X-Forwarded-For": "82.84.247.253,::ffff:10.0.4.121",
+      "X-Real-Ip": "82.84.247.253",
+      "X-Request-Id": "95833f78b3bf3d9e7ef1e590b033b656",
+      "Host": "hub.gke2.mybinder.org",
+      "Connection": "close"
+    }
+[E 09:56:10.406 NotebookApp] 500 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/d18eac19-f1a1-45a6-b114-43db8fc8087e (82.84.247.253) 4.820000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
