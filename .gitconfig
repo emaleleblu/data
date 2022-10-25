@@ -1,3 +1,5 @@
 [user]
 	email = ema86@tiscali.it
 	name = ema
+[init]
+	defaultBranch = main

@@ -264,3 +264,18 @@ ERROR:terminado.websocket:not able to serialize: expected string or bytes-like o
       "Connection": "close"
     }
 [E 09:56:10.406 NotebookApp] 500 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/d18eac19-f1a1-45a6-b114-43db8fc8087e (82.84.247.253) 4.820000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 10:11:35.999 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.460000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 10:11:39.442 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.080000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 10:11:44.450 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.010000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index.ipynb
+[W 10:11:53.279 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.130000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 10:11:56.253 NotebookApp] 404 GET /user/ipython-ipython-in-depth-rb87ga46/api/metrics/v1 (82.84.247.253) 2.060000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[W 10:11:57.450 NotebookApp] 404 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/e3575037-0a77-48d1-85e5-f2620c3bbe67 (82.84.247.253): Session not found: session_id='e3575037-0a77-48d1-85e5-f2620c3bbe67'
+[W 10:11:57.451 NotebookApp] Session not found: session_id='e3575037-0a77-48d1-85e5-f2620c3bbe67'
+[W 10:11:57.451 NotebookApp] 404 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/e3575037-0a77-48d1-85e5-f2620c3bbe67 (82.84.247.253) 1.740000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
+[I 10:11:57.655 NotebookApp] Kernel started: 029c69af-d8ec-48bd-b37b-490ffbff5bb8, name: python3
+[W 10:22:10.192 NotebookApp] Culling 'idle' kernel 'python3' (029c69af-d8ec-48bd-b37b-490ffbff5bb8) with 1 connections due to 611 seconds of inactivity.
+[I 10:22:10.193 NotebookApp] Kernel shutdown: 029c69af-d8ec-48bd-b37b-490ffbff5bb8
+[I 10:22:10.383 NotebookApp] Starting buffering for 029c69af-d8ec-48bd-b37b-490ffbff5bb8:a7d50ab1b15048fa8d22d206f5eb172d
+[W 10:22:10.743 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/12a76777-d2d7-43c3-bd22-6f0ecd9a0199 (82.84.247.253): Kernel deleted before session
+[W 10:22:10.743 NotebookApp] Kernel deleted before session
+[W 10:22:10.743 NotebookApp] 410 DELETE /user/ipython-ipython-in-depth-rb87ga46/api/sessions/12a76777-d2d7-43c3-bd22-6f0ecd9a0199 (82.84.247.253) 2.120000ms referer=https://hub.gke2.mybinder.org/user/ipython-ipython-in-depth-rb87ga46/notebooks/Index-Copy1.ipynb
