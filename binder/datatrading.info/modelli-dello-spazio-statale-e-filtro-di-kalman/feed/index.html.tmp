@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commenti a: Modelli dello spazio degli stati e filtro di Kalman	</title>
+	<atom:link href="https://datatrading.info/modelli-dello-spazio-statale-e-filtro-di-kalman/feed/" rel="self" type="application/rss+xml" />
+	<link>https://datatrading.info/modelli-dello-spazio-statale-e-filtro-di-kalman/</link>
+	<description>Tecnologie Digitali applicate al Trading</description>
+	<lastBuildDate>Fri, 29 Jul 2022 16:41:51 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+</channel>
+</rss>
